@@ -33,6 +33,9 @@ app.listen(PORT,()=>{
 //connect to db
 dbConnect();
 //default route
-app.get("/",(req,res)=>{
+// Default route
+app.get("/", (req, res) => {
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Credentials", true);
     res.send('<h1>HOMEPAGE</h1>');
-})
+});
