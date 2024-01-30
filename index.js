@@ -22,7 +22,7 @@ app.use(express.json());//middleware
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000",
+		origin:"https://pizza-ordersite.vercel.app",
 		credentials:true,
 	})
 )
